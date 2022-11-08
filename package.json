@@ -1,6 +1,6 @@
 {
-  "name": "@paymoapp/electron-shutdown-handler",
-  "version": "1.0.13",
+  "name": "@get-wrecked/electron-shutdown-handler",
+  "version": "1.1.0",
   "description": "Handle shutdown messages on windows in your electron app and delay system shutdown",
   "main": "dist/index.js",
   "scripts": {
@@ -35,7 +35,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/paymoapp/electron-shutdown-handler.git"
+    "url": "git+https://github.com/get-wrecked/electron-shutdown-handler.git"
   },
   "keywords": [
     "electron",
