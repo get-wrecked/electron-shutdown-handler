@@ -16,6 +16,9 @@ jobs:
         with:
           node-version: 16
           registry-url: https://npm.pkg.github.com/
+      - name: setup-msbuild
+        uses: microsoft/setup-msbuild@v1.1.3
+
       - run: npm ci --ignore-scripts
       - run: npm run prebuild
       - run: del /s /q src
