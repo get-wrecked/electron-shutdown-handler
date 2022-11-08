@@ -21,13 +21,13 @@ jobs:
 
       - run: npm ci --ignore-scripts
       - run: npm run prebuild
-      - run: del /s /q src
-      - run: del /s /q .github
-      - run: del /q .prettierrc.json
-      - run: del /q CHANGELOG.md
-      - run: del /q README.md
-      - run: del /q tsconfig.json
-      - run: del /q .eslintrc.json
+      - run: del /s src
+      - run: del /s .github
+      - run: del .prettierrc.json
+      - run: del CHANGELOG.md
+      - run: del README.md
+      - run: del tsconfig.json
+      - run: del .eslintrc.json
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
