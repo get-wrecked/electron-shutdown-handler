@@ -1,6 +1,6 @@
 {
   "name": "@get-wrecked/electron-shutdown-handler",
-  "version": "1.1.1-alpha.2",
+  "version": "1.1.1-alpha.3",
   "description": "Handle shutdown messages on windows in your electron app and delay system shutdown",
   "main": "dist/index.js",
   "scripts": {
@@ -24,7 +24,7 @@
   },
   "binary": {
     "napi_versions": [
-      7
+      8
     ]
   },
   "files": [
