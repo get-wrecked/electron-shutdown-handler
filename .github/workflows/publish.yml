@@ -23,6 +23,7 @@ jobs:
       - run: npm config set msvs_version 2019
       - run: npm run prebuild -- --upload ${{secrets.PREBUILD_TOKEN}}
       - run: npm run build:ts
+      - run: rmdir /s /q prebuilds
       - run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          NODE_AUTH_TOKEN: ${{secrets.PUBLIC_PACKAGE_TOKEN}}
