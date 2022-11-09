@@ -21,8 +21,8 @@ jobs:
 
       - run: npm ci --ignore-scripts
       - run: npm config set msvs_version 2019
-      - run: npm run prebuild -- --upload ${{secrets.PREBUILD_TOKEN}}
-      - run: npm run build
+#      - run: npm run prebuild -- --upload ${{secrets.PREBUILD_TOKEN}}
+      - run: npm run build:ts
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
