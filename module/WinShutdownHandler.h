@@ -2,10 +2,10 @@
 #include <napi.h>
 #include <string>
 
-#ifndef _PAYMO_WINSHUTDOWNHANDLER_H
-#define _PAYMO_WINSHUTDOWNHANDLER_H
+#ifndef _ELECTRON_WINSHUTDOWNHANDLER_H
+#define _ELECTRON_WINSHUTDOWNHANDLER_H
 
-namespace PaymoWinShutdownHandler {
+namespace ElectronWinShutdownHandler {
 	Napi::Object Init(Napi::Env env, Napi::Object exports);
 
 	// Exported functions
