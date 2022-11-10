@@ -1,6 +1,6 @@
 #include "WinShutdownHandler.h"
 
-namespace PaymoWinShutdownHandler {
+namespace ElectronWinShutdownHandler {
 	// Internal objects
 	HWND mainWindow = NULL;
 	WNDPROC prevWndProc = NULL;
